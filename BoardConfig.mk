@@ -32,5 +32,28 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_lmi
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/lmi_defconfig
 
-# Inherit from the proprietary version
-include vendor/xiaomi/lmi/BoardConfigVendor.mk
+# Crypto
+VENDOR_SECURITY_PATCH := 2099-12-31
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE := true
+TW_INCLUDE_FBE_METADATA_DECRYPT := true
+BOARD_USES_METADATA_PARTITION := true
+
+# TWRP specific build flags
+TW_THEME := portrait_hdpi
+TW_DEVICE_VERSION=11.0
+RECOVERY_SDCARD_ON_DATA := true
+TARGET_RECOVERY_QCOM_RTC_FIX := true
+TW_EXCLUDE_DEFAULT_USB_INIT := true
+TW_EXTRA_LANGUAGES := true
+TW_INCLUDE_NTFS_3G := true
+TW_USE_TOOLBOX := true
+TW_INPUT_BLACKLIST := "hbtp_vm"
+TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
+TW_MAX_BRIGHTNESS := 2047
+TW_DEFAULT_LANGUAGE := zh_CN
+TW_DEFAULT_BRIGHTNESS := 1200
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
+TW_NO_SCREEN_BLANK := true
+PLATFORM_VERSION := 16.1.0
