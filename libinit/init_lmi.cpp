@@ -10,10 +10,10 @@ static const variant_info_t lmi_info = {
     .prop_key = "ro.boot.product.hardware.sku",
     .prop_value = "std",
 
-    .brand = "POCO",
+    .brand = "Redmi",
     .device = "lmi",
     .marketname = "",
-    .model = "POCO F2 Pro",
+    .model = "Redmi K30 Pro",
     .build_description = "lmi-user 11 RKQ1.200826.002 V12.5.2.0.RJKCNXM release-keys",
     .build_fingerprint = "Redmi/lmi/lmi:11/RKQ1.200826.002/V12.5.2.0.RJKCNXM:user/release-keys",
 };
